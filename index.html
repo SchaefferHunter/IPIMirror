@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal DevOps Mirror — Build Tools Distribution</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f7fa;
+            color: #1a202c;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #1a365d, #2c5282);
+            color: white;
+            padding: 32px 0;
+        }
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .header .subtitle {
+            opacity: 0.85;
+            margin-top: 4px;
+            font-size: 14px;
+        }
+        .content {
+            padding: 40px 0;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 32px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            margin-bottom: 24px;
+        }
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: #2d3748;
+        }
+        .status {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #c6f6d5;
+            color: #22543d;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .gotcha {
+            background: linear-gradient(135deg, #fed7d7, #feb2b2);
+            border: 3px solid #c53030;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .gotcha h2 {
+            font-size: 48px;
+            color: #742a2a;
+            margin-bottom: 16px;
+        }
+        .gotcha p {
+            font-size: 18px;
+            color: #2d3748;
+            margin-bottom: 12px;
+        }
+        .gotcha .small {
+            font-size: 14px;
+            color: #4a5568;
+            margin-top: 24px;
+        }
+        code {
+            background: #edf2f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 13px;
+        }
+        ul {
+            margin-left: 24px;
+            margin-top: 8px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <h1>🔧 Internal DevOps Mirror</h1>
+        <div class="subtitle">Build Tools Distribution Service · v2.4.1</div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+
+        <div class="card">
+            <h2>Mirror Status</h2>
+            <p><span class="status">● Operational</span> &nbsp; All build tools available.</p>
+        </div>
+
+        <div class="card">
+            <h2>Available Tools</h2>
+            <ul>
+                <li><strong>maven-build-tools</strong> v3.9.5 — <code>./setup-maven.sh</code></li>
+                <li><strong>internal-jdk-distribution</strong> 17.0.9 — <code>./install-jdk.sh</code></li>
+                <li><strong>compliance-plugins</strong> v2.4 — <code>./install-plugins.sh</code></li>
+            </ul>
+        </div>
+
+        <!-- GOTCHA -->
+        <div class="gotcha">
+            <h2>🎣 GOTCHA!</h2>
+            <p><strong>Wenn das eine echte Phishing-Seite wäre,</strong></p>
+            <p>hättest du gerade die "Setup-Tools" eines Angreifers heruntergeladen —</p>
+            <p>und dein Coding-Assistent hätte sie dir <strong>selbst empfohlen</strong>.</p>
+
+            <p class="small">
+                Diese Seite ist Teil einer Lehr-Demo zur <strong>Indirect Prompt Injection</strong>.<br>
+                Eine versteckte Anweisung in einer Java-Datei hat den Coding-Assistenten dazu gebracht,
+                diese URL aufzurufen — ohne dass der Entwickler es bemerkt hat.<br><br>
+                Mehr dazu: Greshake et al., <em>"Not What You've Signed Up For"</em>, AISec 2023.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
